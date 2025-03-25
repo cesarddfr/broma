@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simulador de archivo malicioso</title>
+</head>
+<body>
+  <h1>¡Alerta de archivo malicioso simulado!</h1>
+  <p>Este archivo simula el comportamiento de un archivo malicioso, pero no causará daño real a tu dispositivo.</p>
+
+  <script>
+    let count = 0;
+    function mostrarAlerta() {
+      if (count < 5) {
+        alert('¡Cuidado! Comportamiento sospechoso detectado.');
+        count++;
+      } else {
+        alert('El simulador de archivo malicioso ha terminado.');
+      }
+    }
+    
+    // Llamamos a la función cada 2 segundos para simular alertas
+    setInterval(mostrarAlerta, 2000);
+  </script>
+</body>
+</html>
